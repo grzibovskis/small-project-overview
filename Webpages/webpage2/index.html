@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Majaslapa2</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">AUDIO<span>AE</span></a>
+
+                <img id="mobile-btn" class="mobile-menu" src="images/menu.svg" alt="Open navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close navigation">
+                    <ul class="prim-nav">
+                        <li class="fat"><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+
+                    <ul class="sec-nav">
+                        <li><a href="#">Contacts</a></li>
+                        <li class="link"><a href="#">ORDER!</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">Sound equipment.</p>
+                    <h1>Distribution of professional sound equipment.</h1>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">How distribution works?</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch a video">Watch a video.
+                        </a>
+                    </div>
+                </div>
+
+                <img src="images/illustration.svg" class="hero-img" alt="illustration">
+            </div>
+
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>AKG</li>
+                    <li>KLOTZ</li>
+                    <li>Neutrik</li>
+                    <li>Yamaha</li>
+                    <li>JBL</li>
+                </ul>
+
+                <img src="images/holding-phone.jpg" alt="holding phone">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="images/person.jpg" alt="Person">
+
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                        <cite>- Pedro</cite>
+                    </li>
+                    <li>
+                        <img src="images/person.jpg" alt="Person">
+
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                        <cite>- Pedro</cite>
+                    </li>
+                    <li>
+                        <img src="images/person.jpg" alt="Person">
+
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                        <cite>- Pedro</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="countainer">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Nane</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="Massage">Massage</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.0106718083225!2d24.03998034369593!3d56.93148384783032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed0729746655f%3A0xa0cd5802e817e420!2sJaunmoku%20iela%2016%2C%20Zemgales%20priek%C5%A1pils%C4%93ta%2C%20R%C4%ABga%2C%20LV-1046!5e0!3m2!1sen!2slv!4v1636368986274!5m2!1sen!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-btn')
+             nav = document.querySelector('nav')
+             mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+
+
+            
+           
+            
+        </script>
+        
+    </body>
+</html>
